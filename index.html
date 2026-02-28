@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janasi Jaiswal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{
+  font-family: 'Inter', sans-serif;
+  background:#f5f2ef;
+  color:#111827;
+}
+
+
+/* EXACT HERO GRADIENT SHADE */
+.hero-bg{
+  background: linear-gradient(
+    135deg,
+    #f3e8ff 0%,
+    #e9d5ff 30%,
+    #e0e7ff 60%,
+    #fbcfe8 100%
+  );
+}
+
+.serif{
+  font-family: 'Playfair Display', serif;
+}
+</style>
+</head>
+
+<body>
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/40 border-b border-black/5">
+
+  <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <h2 class="serif text-lg font-semibold text-gray-800">
+      Janasi
+    </h2>
+
+    <!-- Links -->
+    <ul class="hidden md:flex gap-10 text-sm text-gray-700">
+      <li><a href="#home" class="hover:text-cyan-400">Home</a></li>
+      <li><a href="#about" class="hover:text-cyan-400">About</a></li>
+      <li><a href="#skills" class="hover:text-cyan-400">Skills</a></li>
+      <li><a href="#education" class="hover:text-cyan-400">Education</a></li>
+      <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
+      <li><a href="#leadership" class="hover:text-cyan-400">Leadership</a></li>
+<li><a href="#achievements" class="hover:text-cyan-400">Achievements</a></li>
+      <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+    </ul>
+
+    <!-- Badge -->
+    <div class="hidden md:block">
+      <span class="text-xs px-4 py-2 rounded-full bg-yellow-100 text-yellow-700 border border-yellow-200">
+        Available for Work
+      </span>
+    </div>
+
+  </div>
+
+</nav>
+<!-- HERO -->
+<section id="home" class="hero-bg min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 scroll-mt-24">
+<!-- IMAGE -->
+<div class="mb-8 flex justify-center">
+  <img src="./images/photo.jpeg"
+  class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-md border border-white/50">
+</div>
+
+<p class="text-sm tracking-wide text-gray-600 mb-6">
+Hi, I am Janasi Jaiswal
+</p>
+<h1 class="serif text-4xl md:text-6xl leading-relaxed max-w-4xl text-slate-900">
+  A <span class="text-pink-600">Computer Science Student</span>, I craft
+  scalable and real-world 
+  <span class="text-indigo-600">web solutions</span>
+</h1>
+
+<p class="mt-6 text-gray-600 max-w-2xl">
+Actively seeking opportunities to apply my skills, gain industry exposure, and contribute to impactful development projects.
+</p>
+
+<!-- Buttons -->
+<div class="mt-10 flex gap-6">
+  <a href="#projects"
+     class="px-8 py-3 rounded-full bg-black text-white text-sm hover:opacity-80 transition">
+    View Projects
+  </a>
+
+  <a href="resume_janasi.pdf" download
+     class="px-8 py-3 rounded-full border border-black text-sm hover:bg-black hover:text-white transition">
+    Download Resume
+  </a>
+  <a href="Design_portfolio.pdf"
+     class="px-8 py-3 rounded-full bg-black text-white text-sm hover:opacity-80 transition">
+Design Portfolio
+  </a>
+</div>
+
+<!-- Social Links -->
+<div class="mt-12 flex justify-center gap-6">
+
+  <a href="https://github.com/Janasi8" target="_blank"
+     class="px-5 py-2 rounded-full border border-black/20 bg-white/60 backdrop-blur-sm text-gray-800 text-sm font-medium shadow-sm hover:bg-pink-100 hover:text-pink-700 hover:border-pink-300 transition">
+     GitHub
+  </a>
+
+  <a href="https://www.linkedin.com/in/janasi-jaiswal-9904312a1" target="_blank"
+     class="px-5 py-2 rounded-full border border-black/20 bg-white/60 backdrop-blur-sm text-gray-800 text-sm font-medium shadow-sm hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 transition">
+     LinkedIn
+  </a>
+
+</div>
+
+
+</h1>
+
+<div class="mt-16 w-full overflow-hidden">
+<div class="flex gap-16 animate-marquee whitespace-nowrap text-gray-600 text-sm">
+<span>Web Development</span>
+<span>UI Design</span>
+<span>Frontend Engineering</span>
+<span>Responsive Design</span>
+<span>Problem Solving</span>
+<span>Web Development</span>
+<span>UI Design</span>
+<span>Frontend Engineering</span>
+</div>
+</div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-28 px-6 bg-[#f5f2ef] text-center scroll-mt-24">
+
+<h2 class="serif text-4xl mb-8">
+About <span class="text-pink-500">Me</span>
+</h2>
+<p class="text-slate-700 max-w-4xl mx-auto text-center leading-relaxed">
+
+I am a Computer Science student at <span class="font-semibold text-indigo-600">G.L. Bajaj Institute of Technology and Management</span> with a growing interest in <span class="font-semibold text-indigo-600">web development</span> and problem solving. I enjoy building responsive and user-friendly applications while continuously improving my coding skills through practical projects and hands-on learning.
+
+Through academic coursework, internships, and personal projects, I have gained exposure to <span class="font-semibold text-indigo-600">frontend development</span>, basic <span class="font-semibold text-indigo-600">full-stack development</span>, <span class="font-semibold text-indigo-600">database integration</span>, and real-world application building. I have also strengthened my analytical and teamwork skills by securing <span class="font-semibold text-indigo-600">AIR 7 in the Smart India Hackathon (Final Internal Round)</span>.
+
+Beyond academics, I actively contribute to student communities as a <span class="font-semibold text-indigo-600">Design Team Director</span> at Shrinic Club and Rotaract Club, and as a <span class="font-semibold text-indigo-600">Design Team Member</span> at GeeksforGeeks. 
+
+Currently, I am seeking internship opportunities to gain industry exposure, learn from experienced professionals, and contribute meaningfully to real-world software projects.
+
+</p>
+<div class="grid md:grid-cols-3 gap-8 text-center mt-12">
+
+  <div>
+    <h3 class="text-3xl font-semibold text-[#1f4d4f]">2+</h3>
+    <p class="text-slate-700 mt-2">Years of Consistent Learning</p>
+  </div>
+
+  <div>
+    <h3 class="text-3xl font-semibold text-[#1f4d4f]">3+</h3>
+    <p class="text-slate-700 mt-2">Real-World Projects Developed</p>
+  </div>
+
+  <div>
+    <h3 class="text-3xl font-semibold text-[#1f4d4f]">5+</h3>
+    <p class="text-slate-700 mt-2">Technical Certifications Earned</p>
+  </div>
+  
+
+</div>
+
+
+</section>
+<!-- SKILLS -->
+<section id="skills" class="py-28 px-6 bg-[#f5f2ef]">
+
+<h2 class="serif text-4xl text-center mb-16">
+My <span class="text-pink-500">Skills</span>
+</h2>
+
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-xl mb-3">Languages</h3>
+<p class="text-gray-600">C/C++, JavaScript</p>
+</div>
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-xl mb-3">Frontend</h3>
+<p class="text-gray-600">HTML, CSS, Tailwind</p>
+</div>
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-xl mb-3">Core CS</h3>
+<p class="text-gray-600">SQL, DSA, OOPS, DBMS</p>
+</div>
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-xl mb-3">Tools</h3>
+<p class="text-gray-600">GitHub, Git, VS Code, Canva</p>
+</div>
+
+</div>
+</section>
+<!-- EDUCATION -->
+<section id="education" class="py-28 px-6 bg-[#f5f2ef]">
+
+<h2 class="serif text-4xl text-center mb-16">
+My <span class="text-pink-500">Education</span>
+</h2>
+
+<div class="max-w-4xl mx-auto space-y-10">
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-xl mb-2">B.Tech (Computer Science)</h3>
+<p class="text-gray-600">G.L. Bajaj Institute of Technology and Management</p>
+<p class="text-gray-500 text-sm mt-1">2023 – 2027</p>
+</div>
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-xl mb-2">Senior Secondary (12th)</h3>
+<p class="text-gray-600">SRVS Sikshan Sansthan</p>
+<p class="text-gray-500 text-sm mt-1">2020 – 2021</p>
+</div>
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-xl mb-2">Secondary (10th)</h3>
+<p class="text-gray-600">SRVS Sikshan Sansthan</p>
+<p class="text-gray-500 text-sm mt-1">2018 – 2019</p>
+</div>
+
+</div>
+</section>
+<!-- EXPERIENCE -->
+<section id="experience" class="py-28 px-6 bg-[#f5f2ef]">
+
+<h2 class="serif text-4xl text-center mb-16">
+My <span class="text-pink-500">Experience</span>
+</h2>
+
+<div class="max-w-4xl mx-auto">
+
+<div class="bg-white/70 backdrop-blur-sm p-10 rounded-2xl shadow-sm">
+
+<h3 class="serif text-2xl mb-3">
+IBM PBEL Virtual Internship
+</h3>
+
+<p class="text-gray-500 text-sm mb-4">
+Project Based Experimental Learning (PBEL)
+</p>
+
+<p class="text-gray-600 leading-relaxed">
+Completed a virtual internship focused on web development fundamentals.
+Gained hands-on experience in building responsive web applications and
+understanding frontend development concepts.
+
+As part of the internship, I designed and developed a frontend Food
+Website where I implemented modern UI layouts, responsive design, and
+user-friendly interfaces using HTML, CSS, Tailwind CSS, ReactJs and JavaScript.
+This experience strengthened my practical knowledge of frontend development
+and project-based learning.
+</p>
+
+<a href="Janasi_Jaiswal_PBEL.pdf" target="_blank"
+class="inline-block mt-5 text-pink-600 hover:underline">
+View Certificate →
+</a>
+
+</div>
+
+</div>
+</section>
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="py-28 px-6 bg-[#f5f2ef]">
+
+<h2 class="serif text-4xl text-center mb-16">
+My <span class="text-pink-500">Certifications</span>
+</h2>
+
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-lg mb-2">Learn C++ Programming</h3>
+<p class="text-gray-600 text-sm mb-4">Udemy</p>
+<a href="./images/C++.jpeg" target="_blank"
+class="text-pink-600 hover:underline text-sm">
+View Certificate →
+</a>
+</div>
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-lg mb-2">SQL Bootcamp</h3>
+<p class="text-gray-600 text-sm mb-4">Udemy</p>
+<a href="./images/SQL.jpeg" target="_blank"
+class="text-pink-600 hover:underline text-sm">
+View Certificate →
+</a>
+</div>
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-lg mb-2">Networking Essentials</h3>
+<p class="text-gray-600 text-sm mb-4">Cisco Networking Academy</p>
+<a href="./images/Networking.pdf" target="_blank"
+class="text-pink-600 hover:underline text-sm">
+View Certificate →
+</a>
+</div>
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-lg mb-2">  Exploring Networking with Cisco Packet Tracer</h3>
+<p class="text-gray-600 text-sm mb-4">Cisco Networking Academy</p>
+<a href="./images/networkcisco.jpeg" target="_blank"
+class="text-pink-600 hover:underline text-sm">
+View Certificate →
+</a>
+</div>
+
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-lg mb-2">AR/VR Training Program</h3>
+<p class="text-gray-600 text-sm mb-4">Aalgorix / GL Bajaj</p>
+<a href="./images/AR_VR.jpeg" target="_blank"
+class="text-pink-600 hover:underline text-sm">
+View Certificate →
+</a>
+</div>
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
+<h3 class="serif text-lg mb-2">Coding Interview Preparation – The Softer Skills</h3>
+<p class="text-gray-600 text-sm mb-4">Udemy</p>
+<a href="./images/soft_skill.jpeg" target="_blank"
+class="text-pink-600 hover:underline text-sm">
+View Certificate →
+</a>
+</div>
+
+
+</div>
+</section>
+<!-- PROJECTS -->
+<!-- PROJECTS -->
+<section id="projects" class="py-28 px-6 bg-[#f5f2ef]">
+
+<h2 class="serif text-4xl text-center mb-20">
+My <span class="text-pink-500">Projects</span>
+</h2>
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+
+<div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition">
+
+<img src="./images/Blood_donor.png" class="w-full h-52 object-cover">
+
+<div class="p-8">
+<h3 class="serif text-xl mb-3">Blood Donor Finder</h3>
+<p class="text-slate-500 mt-2">
+A full-stack web application developed to help users easily find blood donors
+based on blood group and city with a simple and responsive interface.
+</p>
+
+<ul class="text-slate-500 mt-3 list-disc list-inside space-y-1">
+  <li>Register and manage donor details</li>
+  <li>Search donors by blood group and location</li>
+  <li>Form validation and database integration</li>
+</ul>
+
+<div class="flex flex-wrap gap-2 mt-4">
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">HTML</span>
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">Tailwind</span>
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">JavaScript</span>
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">PHP</span>
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">MySQL</span>
+</div>
+<div class="mt-8 flex gap-4"></div>
+<div class="flex gap-4 text-sm">
+<a href="https://github.com/Janasi8/blood-donor-finder" target="_blank"
+class="px-4 py-2 rounded-full border border-black/20 hover:bg-pink-100 hover:text-pink-600 transition">
+GitHub
+</a>
+
+<a href="https://janasi-bloodbank.infinityfreeapp.com/index.html" target="_blank"
+class="px-4 py-2 rounded-full border border-black/20 hover:bg-indigo-100 hover:text-indigo-600 transition">
+Live Demo
+</a>
+</div>
+</div>
+</div>
+<!-- HIRE ME PORTAL -->
+<div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition">
+
+<img src="./images/hire_Me.png" class="w-full h-52 object-cover">
+
+<div class="p-8">
+<h3 class="serif text-xl mb-3">Hire Me Portal</h3>
+
+<p class="text-slate-500 mt-2">
+A frontend job portal interface where recruiters can post jobs and candidates
+can browse and apply through a clean and user-friendly layout.
+</p>
+
+<ul class="text-slate-500 mt-3 list-disc list-inside space-y-1">
+  <li>Browse and apply for jobs</li>
+  <li>Clean and simple UI design</li>
+  <li>Responsive layout</li>
+</ul>
+
+<div class="flex flex-wrap gap-2 mt-4">
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">HTML</span>
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">CSS</span>
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">JavaScript</span>
+</div>
+
+<div class="mt-8 flex gap-4"></div>
+<div class="flex gap-4 text-sm">
+<a href="https://github.com/Janasi8/HireMePortal" target="_blank"
+class="px-4 py-2 rounded-full border border-black/20 hover:bg-pink-100 hover:text-pink-600 transition">
+GitHub
+</a>
+
+<a href="https://hiremeportal.onrender.com" target="_blank"
+class="px-4 py-2 rounded-full border border-black/20 hover:bg-indigo-100 hover:text-indigo-600 transition">
+Live Demo
+</a>
+</div>
+
+</div>
+</div>
+<!-- FOODIE DELIVERY -->
+<div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition">
+
+<img src="./images/Foodie.png" class="w-full h-52 object-cover">
+
+<div class="p-8">
+<h3 class="serif text-xl mb-3">Foodie Delivery</h3>
+<p class="text-slate-500 mt-2">
+A modern and responsive frontend design for a food delivery website
+created during my web development internship.
+</p>
+
+<ul class="text-slate-500 mt-3 list-disc list-inside space-y-1">
+  <li>Modern UI with menu and product cards</li>
+  <li>Mobile responsive design</li>
+  <li>User-friendly layout</li>
+</ul>
+
+<div class="flex flex-wrap gap-2 mt-4">
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">HTML</span>
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">Tailwind</span>
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">JavaScript</span>
+<span class="bg-gradient-to-r from-cyan-500 to-indigo-500 px-3 py-1 rounded-full text-sm">ReactJs</span>
+</div>
+<div class="mt-8 flex gap-4"></div>
+<div class="flex gap-4 text-sm">
+<a href="https://github.com/Janasi8/Food-Ordering-Website--Frontend" target="_blank"
+class="px-4 py-2 rounded-full border border-black/20 hover:bg-pink-100 hover:text-pink-600 transition">
+GitHub
+</a>
+
+<a href="https://YOUR-VERCEL-LINK.vercel.app" target="_blank"
+class="px-4 py-2 rounded-full border border-black/20 hover:bg-indigo-100 hover:text-indigo-600 transition">
+Live Demo
+</a>
+</div>
+
+</div>
+</div>
+<!-- Repeat same style for other projects -->
+ 
+
+</div>
+</section>
+<section id="leadership" class="py-28 px-6 bg-[#f5f2ef]">
+
+<h2 class="serif text-4xl text-center mb-16">
+Leadership & <span class="text-pink-500">Community</span>
+</h2>
+
+<div class="max-w-4xl mx-auto space-y-10">
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm">
+
+  <h3 class="serif text-lg font-semibold mb-3">
+    Design Team Director – Shrinic Club
+  </h3>
+
+  <p class="text-gray-700 text-sm leading-relaxed mb-4">
+    Leading a team of designers and mentoring junior members on design principles 
+    and creative tools. Contributed to improving overall visual quality of club activities.
+  </p>
+
+  <ul class="text-gray-600 text-sm space-y-2 list-disc list-inside">
+    <li>Directed the design strategy for technical and cultural events across campus.</li>
+    <li>Coordinated with marketing and event teams to ensure consistent visual branding.</li>
+    <li>Reviewed and approved posters, social media creatives, and event banners.</li>
+    <li>Organized internal design workshops to upskill junior members.</li>
+    <li>Managed deadlines and task distribution within the design team.</li>
+    <li>Improved engagement on social media posts through better visual storytelling.</li>
+  </ul>
+
+</div>
+
+<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm">
+
+  <h3 class="serif text-lg font-semibold mb-3">
+    Design Team Director – Rotaract Club
+  </h3>
+
+  <p class="text-gray-700 text-sm leading-relaxed mb-4">
+    Managed visual branding for social initiatives, awareness campaigns, and club events,
+    ensuring consistent and impactful design communication across platforms.
+  </p>
+
+  <ul class="text-gray-600 text-sm space-y-2 list-disc list-inside">
+    <li>Led complete branding for social drives and community outreach programs.</li>
+    <li>Designed promotional materials for fundraising events and campaigns.</li>
+    <li>Collaborated with executive council members for campaign planning and execution.</li>
+    <li>Maintained brand consistency across digital and offline materials.</li>
+    <li>Mentored new design team members in Canva and visual communication principles.</li>
+    <li>Recognized for creativity and leadership contribution within the club.</li>
+  </ul>
+
+</div>
+</section>
+<section id="achievements" class="py-28 px-6 bg-[#f5f2ef]">
+
+<h2 class="serif text-4xl text-center mb-16">
+My <span class="text-pink-500">Achievements</span>
+</h2>
+
+<div class="max-w-4xl mx-auto bg-white/70 backdrop-blur-sm p-10 rounded-2xl shadow-sm">
+
+  <ul class="text-gray-700 space-y-6 text-sm leading-relaxed">
+
+    <li>
+      <span class="font-semibold text-indigo-600">
+        Smart India Hackathon (SIH) – AIR 7 (Internal Round)
+      </span><br>
+      Ranked among the <span class="font-medium">Top 20 teams out of 450+ participants</span>, 
+      showcasing strong problem-solving ability, analytical thinking, and effective teamwork 
+      while developing real-world solution ideas in a competitive environment.
+    </li>
+
+    <li>
+      <span class="font-semibold text-indigo-600">
+        Best Board of Director & Best Executive Council Female – Rotaract Club
+      </span><br>
+      Recognized for exceptional leadership, team coordination, and contribution to 
+      successful execution of social initiatives, branding strategies, and community campaigns.
+    </li>
+
+  </ul>
+
+</div>
+</section>
+<section id="contact" class="py-28 px-6 bg-[#f5f2ef]">
+
+<h2 class="serif text-4xl text-center mb-12">
+Contact <span class="text-pink-500">Me</span>
+</h2>
+
+<form action="https://formspree.io/f/mqedbzgb" method="POST"
+class="max-w-xl mx-auto space-y-6">
+
+<input type="text" name="name" placeholder="Your Name"
+class="w-full p-4 rounded-2xl bg-white/70 border border-black/10 focus:outline-none focus:ring-2 focus:ring-pink-200">
+
+<input type="email" name="email" placeholder="Your Email"
+class="w-full p-4 rounded-2xl bg-white/70 border border-black/10 focus:outline-none focus:ring-2 focus:ring-pink-200">
+
+<textarea name="message" rows="5" placeholder="Your Message"
+class="w-full p-4 rounded-2xl bg-white/70 border border-black/10 focus:outline-none focus:ring-2 focus:ring-pink-200"></textarea>
+
+<button class="w-full py-3 rounded-full bg-black text-white hover:opacity-80 transition">
+Send Message
+</button>
+
+</form>
+</section>
+
+<!-- TYPING SCRIPT -->
+<script>
+const roles = ["Aspiring Software Engineer","Web Developer"];
+let i=0,j=0,del=false;
+const el=document.getElementById("typing");
+
+function type(){
+const word=roles[i];
+if(!del){
+el.textContent=word.slice(0,++j);
+if(j===word.length){del=true;setTimeout(type,1200);return;}
+}else{
+el.textContent=word.slice(0,--j);
+if(j===0){del=false;i=(i+1)%roles.length;}
+}
+setTimeout(type,100);
+}
+type();
+</script>
+<!-- FOOTER -->
+<footer class="py-16 text-center text-sm text-gray-500">
+© 2026 Janasi Jaiswal
+</footer>
+
+<style>
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+}
+</style>
+
+</body>
+</html>
