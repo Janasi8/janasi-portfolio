@@ -4,29 +4,49 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Janasi Jaiswal</title>
-
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-
+<script src="https://unpkg.com/lucide@latest"></script>
 <style>
 body{
   font-family: 'Inter', sans-serif;
-  background:#f5f2ef;
   color:#111827;
+
+  position: relative;
+  z-index: 1;
+
+  background: linear-gradient(
+    120deg,
+    #f5f2ef 0%,
+    #f8f4ff 25%,
+    #eef2ff 50%,
+    #fff1f6 75%,
+    #f5f2ef 100%
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 15s ease infinite;
 }
 
+@keyframes gradientMove {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+html{
+  scroll-behavior: smooth;
+}
 
 /* EXACT HERO GRADIENT SHADE */
 .hero-bg{
-  background: linear-gradient(
-    135deg,
-    #f3e8ff 0%,
-    #e9d5ff 30%,
-    #e0e7ff 60%,
-    #fbcfe8 100%
-  );
-}
+  background:
+  radial-gradient(circle at 15% 20%, rgba(99,102,241,0.25), transparent 40%),
+  radial-gradient(circle at 85% 70%, rgba(236,72,153,0.25), transparent 40%),
+  linear-gradient(135deg,#f3e8ff,#e0e7ff,#fbcfe8);
 
+  position: relative;
+  overflow: hidden;
+}
 .serif{
   font-family: 'Playfair Display', serif;
 }
@@ -34,16 +54,26 @@ body{
 </head>
 
 <body>
+  <div id="particles-js"></div>
 <!-- NAVBAR -->
 <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/40 border-b border-black/5">
 
   <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
 
-    <!-- Logo -->
-    <h2 class="serif text-lg font-semibold text-gray-800">
-      Janasi
-    </h2>
+  <!-- JJ Logo -->
+  <div class="w-9 h-9 rounded-full bg-gradient-to-br from-pink-500 to-indigo-500 
+              flex items-center justify-center text-white font-semibold text-sm shadow-md">
+    JJ
+  </div>
 
+  <!-- Name -->
+  <h2 class="serif text-lg font-semibold text-gray-800">
+    Janasi Jaiswal
+  </h2>
+
+</div>
+   
     <!-- Links -->
     <ul class="hidden md:flex gap-10 text-sm text-gray-700">
       <li><a href="#home" class="hover:text-cyan-400">Home</a></li>
@@ -66,74 +96,91 @@ body{
   </div>
 
 </nav>
+<div class="fixed top-20 left-20 w-72 h-72 bg-pink-300 rounded-full blur-3xl opacity-30 -z-10"></div>
+<div class="fixed bottom-20 right-20 w-72 h-72 bg-indigo-300 rounded-full blur-3xl opacity-30 -z-10"></div>
+
 <!-- HERO -->
+
 <section id="home" class="hero-bg min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 scroll-mt-24">
+<canvas id="tech-bg" class="absolute inset-0 -z-10"></canvas>
+<p class="text-sm tracking-wide text-gray-600 mb-3">
+  Hi, I am
+</p>
+
+
 <!-- IMAGE -->
 <div class="mb-8 flex justify-center">
-  <img src="./images/photo.jpeg"
-  class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-md border border-white/50">
+  <div class="w-32 h-32 md:w-40 md:h-40 overflow-hidden rounded-full">
+    <img src="./images/photo.jpeg"
+      class="w-full h-full object-cover rounded-full shadow-md border border-white/50 transition-transform duration-300 hover:scale-105">
+  </div>
+</div>
+<h2 class="serif text-3xl md:text-4xl font-semibold bg-gradient-to-r 
+           from-pink-600 to-indigo-600 bg-clip-text text-transparent mb-6">
+  Janasi Jaiswal
+</h2>
+<!-- Social Links -->
+<div class="flex items-center justify-center gap-8 text-gray-600 text-xl mt-4">
+
+  <!-- GitHub -->
+  <a href="https://github.com/Janasi8" target="_blank"
+     class="p-2 rounded-full hover:bg-gray-100 hover:text-black 
+     transition-all duration-300 transform hover:-translate-y-1 hover:scale-110">
+    <i data-lucide="github" class="w-6 h-6"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/janasi-jaiswal-9904312a1" target="_blank"
+     class="p-2 rounded-full hover:bg-blue-50 hover:text-blue-600 
+     transition-all duration-300 transform hover:-translate-y-1 hover:scale-110">
+    <i data-lucide="linkedin" class="w-6 h-6"></i>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:janasijaiswal@gmail.com"
+     class="p-2 rounded-full hover:bg-pink-50 hover:text-pink-600 
+     transition-all duration-300 transform hover:-translate-y-1 hover:scale-110">
+    <i data-lucide="mail" class="w-6 h-6"></i>
+  </a>
+
 </div>
 
-<p class="text-sm tracking-wide text-gray-600 mb-6">
-Hi, I am Janasi Jaiswal
-</p>
-<h1 class="serif text-4xl md:text-6xl leading-relaxed max-w-4xl text-slate-900">
-  A <span class="text-pink-600">Computer Science Student</span>, I craft
-  scalable and real-world 
-  <span class="text-indigo-600">web solutions</span>
+<h1 class="serif text-3xl md:text-4xl leading-relaxed max-w-4xl mx-auto md:whitespace-nowrap">
+  <span class="text-pink-600">Computer Science Student</span> 
+  Creating Scalable 
+  <span class="text-indigo-600">Web Applications</span>
 </h1>
-
 <p class="mt-6 text-gray-600 max-w-2xl">
 Actively seeking opportunities to apply my skills, gain industry exposure, and contribute to impactful development projects.
 </p>
 
 <!-- Buttons -->
-<div class="mt-10 flex gap-6">
+<div class="mt-10 flex flex-wrap justify-center gap-6">
+
   <a href="#projects"
-     class="px-8 py-3 rounded-full bg-black text-white text-sm hover:opacity-80 transition">
+     class="px-8 py-3 rounded-full bg-black text-white text-sm font-medium
+     shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
     View Projects
   </a>
 
   <a href="resume_janasi.pdf" download
-     class="px-8 py-3 rounded-full border border-black text-sm hover:bg-black hover:text-white transition">
+     class="px-8 py-3 rounded-full border border-black text-sm font-medium
+     hover:bg-black hover:text-white hover:scale-105 transition-all duration-300">
     Download Resume
   </a>
+
   <a href="Design_portfolio.pdf"
-     class="px-8 py-3 rounded-full bg-black text-white text-sm hover:opacity-80 transition">
-Design Portfolio
-  </a>
-</div>
-
-<!-- Social Links -->
-<div class="mt-12 flex justify-center gap-6">
-
-  <a href="https://github.com/Janasi8" target="_blank"
-     class="px-5 py-2 rounded-full border border-black/20 bg-white/60 backdrop-blur-sm text-gray-800 text-sm font-medium shadow-sm hover:bg-pink-100 hover:text-pink-700 hover:border-pink-300 transition">
-     GitHub
-  </a>
-
-  <a href="https://www.linkedin.com/in/janasi-jaiswal-9904312a1" target="_blank"
-     class="px-5 py-2 rounded-full border border-black/20 bg-white/60 backdrop-blur-sm text-gray-800 text-sm font-medium shadow-sm hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 transition">
-     LinkedIn
+     class="px-8 py-3 rounded-full bg-black text-white text-sm font-medium
+     shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+    Design Portfolio
   </a>
 
 </div>
+
 
 
 </h1>
 
-<div class="mt-16 w-full overflow-hidden">
-<div class="flex gap-16 animate-marquee whitespace-nowrap text-gray-600 text-sm">
-<span>Web Development</span>
-<span>UI Design</span>
-<span>Frontend Engineering</span>
-<span>Responsive Design</span>
-<span>Problem Solving</span>
-<span>Web Development</span>
-<span>UI Design</span>
-<span>Frontend Engineering</span>
-</div>
-</div>
 
 </section>
 
@@ -183,26 +230,46 @@ Currently, I am seeking internship opportunities to gain industry exposure, lear
 My <span class="text-pink-500">Skills</span>
 </h2>
 
+
 <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
 
-<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
-<h3 class="serif text-xl mb-3">Languages</h3>
-<p class="text-gray-600">C/C++, JavaScript</p>
+<div class="group p-8 rounded-2xl shadow-md text-center bg-white 
+transition-all duration-300 transform 
+hover:-translate-y-3 hover:scale-105 hover:shadow-2xl
+hover:bg-gradient-to-br hover:from-pink-200 hover:to-indigo-200">
+
+<h3 class="serif text-xl mb-3 group-hover:text-indigo-700 transition">
+Languages
+</h3>
+
+<p class="text-gray-600 group-hover:text-gray-800 transition">
+C/C++, JavaScript
+</p>
+
 </div>
 
-<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
-<h3 class="serif text-xl mb-3">Frontend</h3>
-<p class="text-gray-600">HTML, CSS, Tailwind</p>
+<div class="group p-8 rounded-2xl shadow-md text-center bg-white 
+transition-all duration-300 transform 
+hover:-translate-y-3 hover:scale-105 hover:shadow-2xl
+hover:bg-gradient-to-br hover:from-pink-200 hover:to-indigo-200">
+<h3 class="serif text-xl mb-3 group-hover:text-indigo-700 transition">Frontend</h3>
+<p class="text-gray-600 group-hover:text-gray-800 transition">HTML, CSS, Tailwind</p>
 </div>
 
-<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
-<h3 class="serif text-xl mb-3">Core CS</h3>
-<p class="text-gray-600">SQL, DSA, OOPS, DBMS</p>
+<div class="group p-8 rounded-2xl shadow-md text-center bg-white 
+transition-all duration-300 transform 
+hover:-translate-y-3 hover:scale-105 hover:shadow-2xl
+hover:bg-gradient-to-br hover:from-pink-200 hover:to-indigo-200">
+<h3 class="serif text-xl mb-3 group-hover:text-indigo-700 transition">Core CS</h3>
+<p class="text-gray-600 group-hover:text-gray-800 transition">SQL, DSA, OOPS, DBMS</p>
 </div>
 
-<div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-sm text-center">
-<h3 class="serif text-xl mb-3">Tools</h3>
-<p class="text-gray-600">GitHub, Git, VS Code, Canva</p>
+<div class="group p-8 rounded-2xl shadow-md text-center bg-white 
+transition-all duration-300 transform 
+hover:-translate-y-3 hover:scale-105 hover:shadow-2xl
+hover:bg-gradient-to-br hover:from-pink-200 hover:to-indigo-200">
+<h3 class="serif text-xl mb-3 group-hover:text-indigo-700 transition">Tools</h3>
+<p class="text-gray-600 group-hover:text-gray-800 transition">GitHub, Git, VS Code, Canva</p>
 </div>
 
 </div>
@@ -352,7 +419,7 @@ My <span class="text-pink-500">Projects</span>
 
 <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
-<div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition">
+<div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2 duration-300">
 
 <img src="./images/Blood_donor.png" class="w-full h-52 object-cover">
 
@@ -391,7 +458,7 @@ Live Demo
 </div>
 </div>
 <!-- HIRE ME PORTAL -->
-<div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition">
+<div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2 duration-300">
 
 <img src="./images/Hire_Me.png" class="w-full h-52 object-cover">
 
@@ -431,7 +498,7 @@ Live Demo
 </div>
 </div>
 <!-- FOODIE DELIVERY -->
-<div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition">
+<div class="bg-white/70 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2 duration-300">
 
 <img src="./images/Foodie.png" class="w-full h-52 object-cover">
 
@@ -614,6 +681,9 @@ type();
   animation: marquee 18s linear infinite;
 }
 </style>
+<script>
+  lucide.createIcons();
+</script>
 
 </body>
 </html>
